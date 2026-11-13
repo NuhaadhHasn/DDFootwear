@@ -13,7 +13,7 @@ namespace DDFootwearDistributors.Forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ManageStock());
+            Application.Run(new Login());
         }
     }
 }
