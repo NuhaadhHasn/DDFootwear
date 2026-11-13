@@ -192,6 +192,8 @@ hardcoded in `DDFootwearClient.Forms/Order.cs` was replaced by the placeholder `
 The second commit fixes one bug: the distributor app started on the **Manage Stock** screen
 instead of **Login**, so the login screen and the menu (customers, sales, orders) could never
 be reached. `Program.cs` now starts `Login`.
+A later commit changed the SQL Server name in the connection strings from my laptop's name to
+`localhost`.
 
 ## Known issues
 
