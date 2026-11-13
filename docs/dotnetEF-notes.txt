@@ -1,0 +1,18 @@
+dotnet ef
+# if no output is shown or error is shown then its not installed
+
+dotnet tool install --global dotnet-ef
+
+dotnet ef migrations add first --project ProductSales.API
+
+dotnet ef database update --project ProductSales.API
+
+dotnet ef migrations add second --project ProductSales.API
+
+
+
+======================================================
+Server=localhost;Database=master;Trusted_Connection=True;
+
+Data Source=YOUR-SERVER-NAME;Initial Catalog=DDFootwear;Integrated Security=True;Trusted_Connection=True;
+Server=localhost;Database=DDFootwear;Integrated Security=True;Trusted_Connection=True;
