@@ -3,7 +3,7 @@ using DDFootwear.API.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var conn = @"Data Source=NUHAADH-LAPTOP;Database=DDFootwear;Trusted_Connection=True;TrustServerCertificate=True;";
+var conn = @"Data Source=localhost;Database=DDFootwear;Trusted_Connection=True;TrustServerCertificate=True;";
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(conn));
 builder.Services.AddScoped<ICustomerRepo, CustomerRepo>();
 builder.Services.AddScoped<IProductRepo, ProductRepo>();

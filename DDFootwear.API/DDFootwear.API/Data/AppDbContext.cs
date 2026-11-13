@@ -29,7 +29,7 @@ namespace DDFootwear.API.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var conn = @"Data Source=NUHAADH-LAPTOP;Database=DDFootwear;Trusted_Connection=True;TrustServerCertificate=True;";
+            var conn = @"Data Source=localhost;Database=DDFootwear;Trusted_Connection=True;TrustServerCertificate=True;";
             optionsBuilder.UseSqlServer(conn);
         }
     }

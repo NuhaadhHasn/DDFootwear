@@ -144,14 +144,14 @@ migrations as applied, so `dotnet ef` will not try to create them again.
 
 ### 2. Point the code at your server
 
-The connection strings contain the machine name `NUHAADH-LAPTOP`. Replace it with your own
-server name, or `(localdb)\MSSQLLocalDB`, in these files:
+The connection strings point at `localhost`, the default SQL Server instance on your own machine.
+If your SQL Server is a named instance, or LocalDB (`(localdb)\MSSQLLocalDB`), change `localhost` in these files:
 
 - `DDFootwear.API/DDFootwear.API/Program.cs` and `Data/AppDbContext.cs`
 - `App.config`, `Properties/Settings.settings` and `Properties/Settings.Designer.cs` in **both**
   WinForms apps (in `Settings.Designer.cs` the backslash must be doubled: `(LocalDB)\\MSSQLLocalDB`)
 
-Searching the solution for `NUHAADH-LAPTOP` finds all of them (8 files).
+Searching the solution for `Data Source=localhost` finds all of them (8 files).
 
 Also open `Controllers/ProductController.cs` in the API and change the hardcoded
 `C:\Users\nuhaa\source\repos\DDFootwear.API\...` image folder (two places) to your own, or
