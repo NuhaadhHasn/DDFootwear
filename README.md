@@ -1,6 +1,6 @@
 # DDFootwear: Footwear Sales System
 
-My HND final project: a footwear sales system made of three parts that work together, a
+My Service Oriented Computing (SOC) assignment at ICBT: a footwear sales system made of three parts that work together, a
 **REST API**, a **customer-facing client app** and a **distributor (admin) app**. All of it is
 written in C#, on top of a SQL Server database.
 
